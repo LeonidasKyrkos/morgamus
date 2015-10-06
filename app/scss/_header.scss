@@ -1,0 +1,34 @@
+$module: 		'header';
+
+.#{$module} {
+	height: 100vh;
+	background-image: url("../../images/optimised/bg.jpg");
+	background-size: cover;
+	background-position: center;
+
+	&__logo {
+		width: em(44);
+		height: em(75);
+		position: absolute;
+		top: em(15);
+		left: em(15);
+		background-image: url("../../images/optimised/logo.png");
+		background-size: cover;
+	}
+
+	&__logo-text {
+		color: $color-white;
+		font-size: em(60);
+		position: absolute;
+		top: 40%;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-weight: $font-weight-bold;
+		text-transform: uppercase;
+		opacity: 0;
+		@include animation(fadeIn 0.15s 0.25s linear forwards);
+		letter-spacing: 2px;
+		line-height: 1;
+	}
+}

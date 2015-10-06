@@ -1,0 +1,25 @@
+$module: 		'nav--top';
+
+.#{$module} {
+	&__items {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		> li {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	&__item {
+		color: $color-white;
+		padding: em(10) em(20);
+		text-decoration: none;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+			color: $color-morg-red;
+		}
+	}
+}

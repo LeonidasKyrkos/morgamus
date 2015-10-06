@@ -1,0 +1,32 @@
+@import 'bourbon';
+@import 'utils/custom-mixins';
+@import 'utils/variables';
+@import 'utils/reset';
+@import 'utils/animations';
+@import 'utils/buttons';
+@import 'nav_top';
+@import 'header';
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $color-white;
+	@include font-size($font-size-base);
+	font-family: $font-family-base;
+}
+
+.morg-red {
+	color: $color-morg-red;
+}
+
+section {
+	min-height: 400px;
+	background-color: #382E34;
+
+	&:nth-child(odd) {
+		background-color: $color-morg-red;
+	}
+}
